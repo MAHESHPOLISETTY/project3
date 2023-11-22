@@ -1,6 +1,6 @@
 #! /bin/bash
 sudo yum update -y
-sudo yum install -y httpd git
+sudo yum install httpd git -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 sudo systemctl status httpd >> /home/ec2-user/httpdstatus.txt
