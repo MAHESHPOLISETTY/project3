@@ -2,7 +2,7 @@
 
 resource "aws_instance" "prj3_mahi_web_instance" {
   ami           = "ami-0e8a34246278c21e4"
-  instance_type = "t3.medium"
+  instance_type = "t2.medium"
   subnet_id     = aws_subnet.prj3_mahi_pub_sub.id
   key_name      = "prj3"
   #count                  = 1
