@@ -6,7 +6,7 @@
 resource "aws_launch_configuration" "prj3_mahi_lc" {
   name_prefix   = "prj3-lc-1"
   image_id      = "ami-0e8a34246278c21e4" # Replace with your desired AMI ID
-  instance_type = "t3.medium"              # Replace with your desired instance type
+  instance_type = "t2.medium"              # Replace with your desired instance type
 }
 
 ################SETTING_UP_ASG#############
