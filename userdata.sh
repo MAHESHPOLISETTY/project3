@@ -1,9 +1,10 @@
 #! /bin/bash
 sudo yum update -y
-sudo yum install httpd git -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
-sudo systemctl status httpd >> /home/ec2-user/httpdstatus.txt
+sudo yum install git -y
+##sudo yum -y install httpd
+##sudo systemctl start httpd
+##sudo systemctl enable httpd
+##sudo systemctl status httpd >> /home/ec2-user/httpdstatus.txt
 sudo yum -y install python3 >> /home/ec2-user/pythonstatus.txt
 sudo yum -y install python3-pip >> /home/ec2-user/pip3status1.txt
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
@@ -21,6 +22,8 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo systemctl status docker >> /home/ec2-user/dckrstatus.txt
 sudo chmod 666 /var/run/docker.sock
+sudo rpm -ivh https://github.com/aquasecurity/trivy/releases/download/v0.18.3/trivy_0.18.3_Linux-64bit.rpm
+sudo yum update -y 
 
 
 
