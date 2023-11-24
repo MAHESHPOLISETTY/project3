@@ -13,7 +13,7 @@ resource "aws_launch_configuration" "prj3_mahi_lc" {
 
 resource "aws_autoscaling_group" "prj3_mahi_asg" {
   name                 = "prj3-asg"
-  min_size             = 2
+  min_size             = 1
   max_size             = 5
   desired_capacity     = 2
   launch_configuration = aws_launch_configuration.prj3_mahi_lc.name
