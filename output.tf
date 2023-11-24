@@ -7,6 +7,13 @@ output "public_ip" {
 
 }
 
+
+output "public_ip" {
+  description = "Public IP address of the EC2 instance"
+  value       = aws_instance.prj3_mahi_webm_instance.public_ip
+
+}
+
 ##############PUBLIC_SUBNET_ID##############
 
 
