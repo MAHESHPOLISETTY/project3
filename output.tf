@@ -8,7 +8,7 @@ output "public_ip" {
 }
 
 
-output "public_ip" {
+output "public_ipm" {
   description = "Public IP address of the EC2 instance"
   value       = aws_instance.prj3_mahi_webm_instance.public_ip
 
