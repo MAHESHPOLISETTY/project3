@@ -31,7 +31,7 @@ resource "aws_subnet" "prj3_mahi_pub2_sub" {
 
   tags = {
 
-    Name = "PRJ3_PUB_SB"
+    Name = "PRJ3_PUB2_SB"
 
 
   }
