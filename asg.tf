@@ -15,7 +15,7 @@ resource "aws_autoscaling_group" "prj3_mahi_asg" {
   name                 = "prj3-asg"
   min_size             = 1
   max_size             = 5
-  desired_capacity     = 2
+  desired_capacity     = 1
   launch_configuration = aws_launch_configuration.prj3_mahi_lc.name
   vpc_zone_identifier  = [aws_subnet.prj3_mahi_pub_sub.id, aws_subnet.prj3_mahi_pub2_sub.id] # Replace with your desired subnet IDs
 }
